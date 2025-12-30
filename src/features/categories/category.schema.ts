@@ -1,0 +1,11 @@
+import { z } from "zod"
+
+export const categorySchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  slug: z.string().min(1, "Slug is required"),
+  icon: z.string().optional(),
+  sortOrder: z.number().min(0),
+  isActive: z.boolean(),
+})
+
+export type CategoryFormValues = z.infer<typeof categorySchema>
