@@ -52,7 +52,7 @@ const LoginPage = () => {
     <div className="min-h-screen flex items-center justify-center bg-muted px-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Login to your account</CardTitle>
+          <CardTitle>Login to your <span className="font-bold">Admin</span>  or <span className="font-bold">Employee</span> account</CardTitle>
           <CardDescription>
             Enter your email and password to login
           </CardDescription>
